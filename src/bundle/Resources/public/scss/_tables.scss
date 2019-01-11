@@ -6,7 +6,7 @@
         align-items: center;
         padding: 0 1.25rem;
         min-height: 50px;
-        border-radius: .25rem .25rem 0 0;
+        border-radius: 0.25rem 0.25rem 0 0;
     }
 
     &__headline {
@@ -50,7 +50,7 @@
     align-items: center;
     padding: 0 1.25rem;
     min-height: 50px;
-    border-radius: .25rem .25rem 0 0;
+    border-radius: 0.25rem 0.25rem 0 0;
 
     &__headline {
         font-size: 1.0625rem;
@@ -67,18 +67,19 @@
 .table {
     margin-bottom: 3rem;
 
-    th, td {
-        padding: .7rem 1.4rem;
+    th,
+    td {
+        padding: 0.7rem 1.4rem;
         line-height: 20px;
     }
 
     thead th {
-        font-size: .9375rem;
+        font-size: 0.9375rem;
         vertical-align: top;
     }
 
     td {
-        font-size: .875rem;
+        font-size: 0.875rem;
         vertical-align: middle;
 
         .checkbox label {
@@ -113,7 +114,7 @@
     padding: 0.75rem 1rem;
     background-color: $ez-white;
     font-style: italic;
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: $ez-color-base-dark;
 }
 
@@ -145,7 +146,7 @@
                 &:last-child {
                     font-weight: normal;
                     background: $ez-white;
-                    width: (calc(100% / 3) * 2);
+                    width: (calc((100% / 3) * 2));
                 }
 
                 &--header:first-child,
