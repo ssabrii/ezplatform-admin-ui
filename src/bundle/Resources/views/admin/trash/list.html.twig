@@ -146,11 +146,7 @@
 {% endblock %}
 
 {% block javascripts %}
-    {%  javascripts
-        'bundles/ezplatformadminui/js/scripts/admin.trash.list.js'
-    %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    {{ encore_entry_script_tags('ez-admin-ui-trash-list-js') }}
 {% endblock %}
 
 {% block title %}{{ 'trash'|trans|desc('Trash') }}{% endblock %}

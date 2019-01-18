@@ -106,9 +106,5 @@
 </section>
 
 {% block javascripts %}
-    {% javascripts
-    '@EzPlatformAdminUiBundle/Resources/public/js/scripts/button.state.toggle.js'
-    %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    {{ encore_entry_script_tags('ez-admin-ui-content-type-list-js') }}
 {% endblock %}
