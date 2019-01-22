@@ -148,7 +148,7 @@
         {{ ezplatform_admin_ui_component_group('custom-admin-ui-modules') }}
         {{ ezplatform_admin_ui_component_group('custom-admin-ui-config') }}
 
-        <script src="{{ asset('bundles/ezplatformadminuimodules/js/UniversalDiscovery.module.js') }}"></script>
+        {{ encore_entry_script_tags('ez-admin-ui-modules-udw-js', null, 'ez') }}
 
         {% block react_modules %}{% endblock %}
         {% block javascripts %}{% endblock %}

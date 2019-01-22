@@ -133,8 +133,8 @@
 {% endblock %}
 
 {% block react_modules %}
-    <script src="{{ asset('bundles/ezplatformadminuimodules/js/SubItems.module.js') }}"></script>
-    <script src="{{ asset('bundles/ezplatformadminuimodules/js/MultiFileUpload.module.js') }}"></script>
+    {{ encore_entry_script_tags('ez-admin-ui-modules-subitems-js', null, 'ez') }}
+    {{ encore_entry_script_tags('ez-admin-ui-modules-mfu-js', null, 'ez') }}
 {% endblock %}
 
 {% block javascripts %}
