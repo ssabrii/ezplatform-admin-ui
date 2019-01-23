@@ -4,17 +4,17 @@ import AlloyEditor from 'alloyeditor';
 import EzEmbedAlign from '../base/ez-embedalign';
 
 export default class EzEmbedAlignLeft extends EzEmbedAlign {
-	static get key() {
-		return 'ezembedleft';
-	}
+    static get key() {
+        return 'ezembedleft';
+    }
 }
 
 AlloyEditor.Buttons[EzEmbedAlignLeft.key] = AlloyEditor.EzEmbedAlignLeft = EzEmbedAlignLeft;
 eZ.addConfig('ezAlloyEditor.ezEmbedAlignLeft', EzEmbedAlignLeft);
 
 EzEmbedAlignLeft.defaultProps = {
-	alignment: 'left',
-	iconName: 'image-left',
-	cssClassSuffix: 'embed-left',
-	label: Translator.trans(/*@Desc("Left")*/ 'embed_align_left_btn.label', {}, 'alloy_editor'),
+    alignment: 'left',
+    iconName: 'image-left',
+    cssClassSuffix: 'embed-left',
+    label: Translator.trans(/*@Desc("Left")*/ 'embed_align_left_btn.label', {}, 'alloy_editor'),
 };
