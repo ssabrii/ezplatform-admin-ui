@@ -87,7 +87,7 @@
             <script type="text/javascript" src="//cdn.crowdin.com/jipt/jipt.js"></script>
         {% endif %}
         <title>{% block title %}eZ Platform{% endblock %}</title>
-        {{ encore_entry_link_tags('ez-admin-ui-layout-css', null, 'ez') }}
+        {{ encore_entry_link_tags('ezplatform-admin-ui-layout-css', null, 'ezplatform') }}
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('bundles/ezplatformadminui/img/favicon.ico') }}" />
         {{ ezplatform_admin_ui_component_group('stylesheet-head') }}
@@ -143,12 +143,12 @@
             })|e('html_attr')  }}"></div>
         <div class="ez-modal-wrapper"></div>
 
-        {{ encore_entry_script_tags('ez-admin-ui-layout-js', null, 'ez') }}
+        {{ encore_entry_script_tags('ezplatform-admin-ui-layout-js', null, 'ezplatform') }}
 
         {{ ezplatform_admin_ui_component_group('custom-admin-ui-modules') }}
         {{ ezplatform_admin_ui_component_group('custom-admin-ui-config') }}
 
-        {{ encore_entry_script_tags('ez-admin-ui-modules-udw-js', null, 'ez') }}
+        {{ encore_entry_script_tags('ezplatform-admin-ui-modules-udw-js', null, 'ezplatform') }}
 
         {% block react_modules %}{% endblock %}
         {% block javascripts %}{% endblock %}

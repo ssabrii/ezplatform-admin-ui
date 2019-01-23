@@ -96,59 +96,59 @@ fs.readdirSync(fieldTypesPath).forEach((file) => {
 });
 
 module.exports = (Encore) => {
-    Encore.addEntry('ez-admin-ui-layout-js', layout)
-        .addEntry('ez-admin-ui-bookmark-list-js', [
+    Encore.addEntry('ezplatform-admin-ui-layout-js', layout)
+        .addEntry('ezplatform-admin-ui-bookmark-list-js', [
             path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js'),
             path.resolve(__dirname, '../public/js/scripts/button.content.edit.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.version.edit.conflict.js'),
         ])
-        .addEntry('ez-admin-ui-content-draft-list-js', [
+        .addEntry('ezplatform-admin-ui-content-draft-list-js', [
             path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js'),
             path.resolve(__dirname, '../public/js/scripts/button.content.edit.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.version.edit.conflict.js'),
         ])
-        .addEntry('ez-admin-ui-content-type-create-js', [
+        .addEntry('ezplatform-admin-ui-content-type-create-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.contenttype.selection.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.contenttype.fieldtype.js'),
         ])
-        .addEntry('ez-admin-ui-content-type-edit-js', [
+        .addEntry('ezplatform-admin-ui-content-type-edit-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.contenttype.selection.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.contenttype.fieldtype.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.contenttype.relation.default.location.js'),
         ])
-        .addEntry('ez-admin-ui-content-type-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-content-type-view-js', [
+        .addEntry('ezplatform-admin-ui-content-type-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-content-type-view-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.location.change.language.js'),
             path.resolve(__dirname, '../public/js/scripts/sidebar/extra.actions.js'),
             path.resolve(__dirname, '../public/js/scripts/sidebar/btn/contenttype.edit.js'),
         ])
-        .addEntry('ez-admin-ui-content-type-group-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-language-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-object-state-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-object-state-group-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-policy-create-with-limitation-js', [
+        .addEntry('ezplatform-admin-ui-content-type-group-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-language-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-object-state-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-object-state-group-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-policy-create-with-limitation-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.limitation.pick.js'),
         ])
-        .addEntry('ez-admin-ui-policy-edit-js', [path.resolve(__dirname, '../public/js/scripts/admin.limitation.pick.js')])
-        .addEntry('ez-admin-ui-role-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-role-view-js', [
+        .addEntry('ezplatform-admin-ui-policy-edit-js', [path.resolve(__dirname, '../public/js/scripts/admin.limitation.pick.js')])
+        .addEntry('ezplatform-admin-ui-role-list-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-role-view-js', [
             path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.location.tab.js'),
         ])
-        .addEntry('ez-admin-ui-role-assignment-create-js', [path.resolve(__dirname, '../public/js/scripts/admin.role_assignment.add.js')])
-        .addEntry('ez-admin-ui-search-js', [
+        .addEntry('ezplatform-admin-ui-role-assignment-create-js', [path.resolve(__dirname, '../public/js/scripts/admin.role_assignment.add.js')])
+        .addEntry('ezplatform-admin-ui-search-js', [
             path.resolve(__dirname, '../public/js/scripts/button.content.edit.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.search.filters.js'),
             path.resolve(__dirname, '../public/js/scripts/udw/select.location.js'),
         ])
-        .addEntry('ez-admin-ui-section-list-js', [
+        .addEntry('ezplatform-admin-ui-section-list-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.section.list.js'),
             path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js'),
         ])
-        .addEntry('ez-admin-ui-section-view-js', [path.resolve(__dirname, '../public/js/scripts/admin.section.list.js')])
-        .addEntry('ez-admin-ui-trash-list-js', [path.resolve(__dirname, '../public/js/scripts/admin.trash.list.js')])
-        .addEntry('ez-admin-ui-content-preview-js', [path.resolve(__dirname, '../public/js/scripts/admin.preview.js')])
-        .addEntry('ez-admin-ui-location-view-js', [
+        .addEntry('ezplatform-admin-ui-section-view-js', [path.resolve(__dirname, '../public/js/scripts/admin.section.list.js')])
+        .addEntry('ezplatform-admin-ui-trash-list-js', [path.resolve(__dirname, '../public/js/scripts/admin.trash.list.js')])
+        .addEntry('ezplatform-admin-ui-content-preview-js', [path.resolve(__dirname, '../public/js/scripts/admin.preview.js')])
+        .addEntry('ezplatform-admin-ui-location-view-js', [
             path.resolve(__dirname, '../public/js/scripts/admin.location.change.language.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.location.view.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.location.tab.js'),
@@ -173,26 +173,26 @@ module.exports = (Encore) => {
             path.resolve(__dirname, '../public/js/scripts/admin.version.edit.conflict.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.location.bookmark.js'),
         ])
-        .addEntry('ez-admin-ui-modal-location-trash-container-js', [
+        .addEntry('ezplatform-admin-ui-modal-location-trash-container-js', [
             path.resolve(__dirname, '../public/js/scripts/button.state.checkbox.toggle.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.trash.container.js'),
         ])
-        .addEntry('ez-admin-ui-modal-location-trash-single-asset-js', [
+        .addEntry('ezplatform-admin-ui-modal-location-trash-single-asset-js', [
             path.resolve(__dirname, '../public/js/scripts/button.state.radio.toggle.js'),
         ])
-        .addEntry('ez-admin-ui-locations-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-translations-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-urls-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
-        .addEntry('ez-admin-ui-dashboard-js', [
+        .addEntry('ezplatform-admin-ui-locations-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-translations-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-urls-tab-js', [path.resolve(__dirname, '../public/js/scripts/button.state.toggle.js')])
+        .addEntry('ezplatform-admin-ui-dashboard-js', [
             path.resolve(__dirname, '../public/js/scripts/udw/browse.js'),
             path.resolve(__dirname, '../public/js/scripts/cotf/create.js'),
             path.resolve(__dirname, '../public/js/scripts/button.content.edit.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.version.edit.conflict.js'),
         ])
-        .addEntry('ez-admin-ui-link-manager-list-js', [path.resolve(__dirname, '../public/js/scripts/admin.linkmanager.list.js')])
-        .addEntry('ez-admin-ui-link-manager-view-js', [path.resolve(__dirname, '../public/js/scripts/button.content.edit.js')])
-        .addEntry('ez-admin-ui-change-user-password-js', [path.resolve(__dirname, '../public/js/scripts/user_password.change.js')])
-        .addEntry('ez-admin-ui-content-edit-parts-js', [
+        .addEntry('ezplatform-admin-ui-link-manager-list-js', [path.resolve(__dirname, '../public/js/scripts/admin.linkmanager.list.js')])
+        .addEntry('ezplatform-admin-ui-link-manager-view-js', [path.resolve(__dirname, '../public/js/scripts/button.content.edit.js')])
+        .addEntry('ezplatform-admin-ui-change-user-password-js', [path.resolve(__dirname, '../public/js/scripts/user_password.change.js')])
+        .addEntry('ezplatform-admin-ui-content-edit-parts-js', [
             ...alloyEditor,
             path.resolve('./vendor/ezsystems/ezplatform-admin-ui-assets/Resources/public/vendors/leaflet/dist/leaflet.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.content.edit.js'),
