@@ -193,15 +193,17 @@ module.exports = (Encore) => {
         .addEntry('ezplatform-admin-ui-link-manager-list-js', [path.resolve(__dirname, '../public/js/scripts/admin.linkmanager.list.js')])
         .addEntry('ezplatform-admin-ui-link-manager-view-js', [path.resolve(__dirname, '../public/js/scripts/button.content.edit.js')])
         .addEntry('ezplatform-admin-ui-change-user-password-js', [path.resolve(__dirname, '../public/js/scripts/user_password.change.js')])
-        .addEntry('ezplatform-admin-ui-content-edit-parts-js', [
+        .addEntry('ezplatform-admin-ui-alloyeditor-js', [
             ...alloyEditor,
+            path.resolve(__dirname, '../public/js/scripts/fieldType/base/base-rich-text.js'),
+            path.resolve(__dirname, '../public/js/scripts/fieldType/alloyeditor/custom.tags.js'),
+        ])
+        .addEntry('ezplatform-admin-ui-content-edit-parts-js', [
             path.resolve('./vendor/ezsystems/ezplatform-admin-ui-assets/Resources/public/vendors/leaflet/dist/leaflet.js'),
             path.resolve(__dirname, '../public/js/scripts/admin.content.edit.js'),
             path.resolve(__dirname, '../public/js/scripts/fieldType/base/base-field.js'),
             path.resolve(__dirname, '../public/js/scripts/fieldType/base/base-file-field.js'),
             path.resolve(__dirname, '../public/js/scripts/fieldType/base/base-preview-field.js'),
-            path.resolve(__dirname, '../public/js/scripts/fieldType/base/base-rich-text.js'),
-            path.resolve(__dirname, '../public/js/scripts/fieldType/alloyeditor/custom.tags.js'),
             ...fieldTypes,
             path.resolve(__dirname, '../public/js/scripts/sidebar/extra.actions.js'),
         ]);
