@@ -14,7 +14,7 @@ matrix:
           env:
           - WEB_HOST="varnish"
           - COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
-          - BEHAT_OPTS="bin/behat --profile=adminui --list-features | bin/fastest \"bin/behat {} --no-interaction -vv --tags=~@EZP-29291-excluded\""
+          - BEHAT_OPTS="bin/behat --profile=adminui --tags=~@EZP-29291-excluded --list-features | bin/fastest \"bin/behat {} --no-interaction -vv\""
           - SYMFONY_ENV=behat
           - SYMFONY_DEBUG=1
 
