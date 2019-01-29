@@ -5,8 +5,6 @@ default:
         Behat\MinkExtension:
             files_path: '%paths.base%/vendor/ezsystems/ezplatform-admin-ui/src/lib/Behat/TestFiles/'
 
-        Liuggio\Fastest\Behat2\ListFeaturesExtension\Extension: ~
-
     suites:
         adminui:
             paths:
