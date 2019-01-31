@@ -8,6 +8,8 @@
         max-width: 33vw;
         position: relative;
         background: $ez-white;
+        overflow: auto;
+        // color: inherit;
     }
 
     .ez-location-view-container {
